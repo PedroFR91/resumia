@@ -4,7 +4,13 @@ const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center  w-full mb-10 mt-10'>
-        <img src={logo} alt='reumia_logo' className='w-28 object-contain' />
+        <div className='flex w-fit items-center'>
+          <img src={logo} alt='reumia_logo' className='w-28 object-contain' />
+          <p className='font-grey- text-4xl'>
+            Resum<span className='orange_gradient font-black'>IA</span>
+          </p>
+        </div>
+
         <button
           type='button'
           onClick={() => window.open("https://github.com/PedroFR91")}
